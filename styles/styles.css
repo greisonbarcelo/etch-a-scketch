@@ -21,6 +21,8 @@ body {
     flex-wrap: wrap;
     width: 100%;
     border: 1px solid red;  
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .box {
     display: flex;
