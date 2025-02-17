@@ -27,7 +27,7 @@ body {
     justify-content: center;
 
     border: 1px solid blueviolet;
-    padding: 8px;
+    /* padding: 4px; */
     /* flex: 1 0 10%; */
 }
 .choices {
