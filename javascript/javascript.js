@@ -28,7 +28,7 @@ buttons.forEach(button => {
 function generateResolution(num) {
     let reso = num * num;
     for (let i = 1; i <= reso; i++) {
-        container.innerHTML += `<div class="box"></div>`;
+        container.innerHTML += `<div class="box">${i}</div>`;
     }
     
     // Dynamically set the flex property
@@ -38,6 +38,8 @@ function generateResolution(num) {
     box.forEach(b => {
         b.style.flex = `1 0 ${certainAmount}`;
         b.style.overflow = 'hidden';
+        // b.style.width = `calc(50% / ${certainAmount})`; /* Each box takes up 1/32 of the container's width */
+        b.style.height = `calc(50% / ${certainAmount})`; /* Set the height to match the width */
     });
 }
 
