@@ -1,3 +1,7 @@
+let sketchpad = document.querySelector(".sketchpad");
+
+
+
 let container = document.querySelector(".container");
 // select all buttons
 let buttons = document.querySelectorAll(".resoChoice>button");
