@@ -21,19 +21,36 @@ body {
     flex-wrap: wrap;
     width: 100%;
     border: 1px solid red;  
-    padding-left: 200px;
-    padding-right: 200px;
+    /* padding-left: 200px;
+    padding-right: 200px; */
 }
 .box {
     display: flex;
     justify-content: center;
-
     border: 1px solid blueviolet;
     /* padding: 4px; */
     /* flex: 1 0 10%; */
-}
-.choices {
+
+    box-sizing: border-box;
+    border: 1px solid #000; /* Optional: for better visibility */
+    width: calc(100% / 32); /* Each box takes up 1/32 of the container's width */
+    height: calc(100vw / 32); /* Set the height to match the width */
     display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow content */
+    cursor: pointer; /* Change cursor to pointer for buttons */
+}
+.resoChoice {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+
+.colorPicker {
+    display: flex;
+    align-items: center;
     justify-content: center;
     gap: 16px;
     padding-bottom: 16px;
