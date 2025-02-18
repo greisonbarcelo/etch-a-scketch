@@ -2,6 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Press Start 2P", serif;
+    color:beige;
+}
+button {
+    color: black;
+    all: unset;
+    padding: 8px;
+    border: 1px solid white;
 }
 body {
     background-color: black;
@@ -11,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 16px;
+    padding-top: 32px;
 }
 .title {
     text-align: center;
